@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>script.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+script.js</font>
+</center></td></tr></table>
+<pre><span class="s0">const </span><span class="s1">mensagensFofas </span><span class="s2">= [</span>
+  <span class="s3">&quot;Você é a razão pela qual eu sorrio todos os dias.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Te amo mais do que as palavras podem expressar.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Cada momento com você é uma bênção.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Você faz meu coração bater mais rápido.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Sua presença ilumina meu dia.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Estou tão feliz por ter você na minha vida.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Você é meu sonho que virou realidade.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Seu sorriso é a coisa mais linda que já vi.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Com você, a vida é muito mais doce.&quot;</span><span class="s2">,</span>
+  <span class="s3">&quot;Amar você é a melhor coisa que já me aconteceu.&quot;</span>
+<span class="s2">];</span>
+
+<span class="s1">document</span><span class="s2">.</span><span class="s1">getElementById</span><span class="s2">(</span><span class="s3">'novaMensagem'</span><span class="s2">).</span><span class="s1">addEventListener</span><span class="s2">(</span><span class="s3">'click'</span><span class="s2">, </span><span class="s0">function</span><span class="s2">() {</span>
+  <span class="s0">const </span><span class="s1">mensagemAleatoria </span><span class="s2">= </span><span class="s1">mensagensFofas</span><span class="s2">[</span><span class="s1">Math</span><span class="s2">.</span><span class="s1">floor</span><span class="s2">(</span><span class="s1">Math</span><span class="s2">.</span><span class="s1">random</span><span class="s2">() * </span><span class="s1">mensagensFofas</span><span class="s2">.</span><span class="s1">length</span><span class="s2">)];</span>
+  <span class="s1">document</span><span class="s2">.</span><span class="s1">getElementById</span><span class="s2">(</span><span class="s3">'mensagem'</span><span class="s2">).</span><span class="s1">textContent </span><span class="s2">= </span><span class="s1">mensagemAleatoria</span><span class="s2">;</span>
+<span class="s2">});</span>
+</pre>
+</body>
+</html>
